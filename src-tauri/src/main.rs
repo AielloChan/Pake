@@ -86,6 +86,11 @@ fn main() -> wry::Result<()> {
           cursor: grab;
           cursor: -webkit-grab;
         }
+
+        /* 降低 wolai.com 左侧边栏高度 */
+        #tour-wolai-sidebar-content {
+          padding-top: 22px;
+        }
       `;
       document.head.append(style);
       const topDom = document.createElement("div");
